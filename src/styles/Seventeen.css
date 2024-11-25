@@ -1,0 +1,43 @@
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu.open {
+    display: block;  /* Show the menu when open */
+}
+
+.menu.close {
+    display: none;   /* Keep it hidden when closed */
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: none;  /* Hide the menu icon on small screens */
+    }
+
+    .menu.open{
+        display:block;
+    }
+
+    .menu {
+        display: none;
+        background-color: brown;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 100%;
+    }
+
+    .menu li {
+        padding: 10px;
+        color: blue;
+    }
+}
